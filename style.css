@@ -1,0 +1,41 @@
+:root {
+    --primary:#1e1e1e;
+    --secondary: white;
+    --third: gray;  
+    --Xcolor: red;
+    --Ocolor: blue; 
+}
+
+body{
+    background-color:var(--primary);
+    color:var(--secondary);
+    font-family:arial;
+    font-size:40px;
+}
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.item {
+    outline: 1px solid var(--third);
+    width:max-content;
+    height:max-content;
+    min-width:50px;
+    min-height:50px;
+    padding:30px;
+    border-color:white;
+    color: var(--secondary);
+    margin:0px;
+    text-align:center;
+}
+
+.main-flexbox {
+  display: flex;       
+  justify-content: center;    
+  align-items: center;     
+  height: 100vh;      
+  min-height: 300px;  
+}
